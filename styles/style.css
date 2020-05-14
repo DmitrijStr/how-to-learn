@@ -7,6 +7,7 @@
   margin: 0 auto;
   /* выше для экранов больше 1600px отцентрировали весь контент */
   font-family: 'Helvetica Neue', Arial, sans-serif;
+  text-align: center;
 }
 
 .header {
@@ -14,18 +15,319 @@
   min-height: 600px;
   max-height: 756px;
   /* выше установили ограничения для секции */
+  background-color: #f2f2f2;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: start;
 }
 
-/* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
-.header__square-pic {
+.logo {
+  width: 183px;
+  height: 32px;
+  background-size: cover;
+  position: absolute;
+}
+.logo__place_header {
+  
+  top: 30px;
+  left: 64px;
+}
+.header__title {
+  width: 730px;
+  font-size: 102px;
+  font-weight: bold;
+  line-height: 96px;
+  margin: 0 0 0 64px;
+}
+.header__subtitle {
+  width: 388px;
+  height: 75px;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 25px;
+  position: absolute;
+  bottom: 30px;
+  left: 64px;
+}
+.header__link {
+  text-decoration: none;
+  color: #2f80ed;
+
+}
+.header__image {
+  width: 765px;
+  height: 608px;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 2;
+}
+.header__square {
+  width: 566px;
   height: 568px;
-  width: 568px;
+  background-color: #2f80ed;
+  background-size: cover;
+  position: absolute;
+  top: 64px;
+  right: 0;
+  z-index: 1;
 }
 
-/* и элемента с модификатором вида ключ-значение */
+
+/* закончился хидер */
+.content {
+/*  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; */
+  margin: auto;
+}
+.block_space {
+  margin: 100px auto 0;
+}
+.description {
+  width: 80%;
+}
+.two-columns {
+  display: flex;
+  justify-content: space-between;
+  text-align: start;
+
+}
+.two-columns__brief {
+  width: 175px;
+  font-size: 18px;
+  line-height: 1.2em;
+  font-weight: normal;
+  color: #2f80ed;
+}
+.two-columns__main-text {
+  width: 80%; 
+  min-width: 784px;
+  font-size: 24px;
+  line-height: 34px;
+  font-weight: normal;
+}
+.two-columns__paragraph {
+  margin: 0;
+}
+.two-columns__span-accent {
+  margin: 30px 0;
+  display: inline-block;
+  font-weight: bold;
+}
+/* конец description */
+
+
+.digits {
+/*  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center; */
+
+
+}
+.table {
+  width: 1100px;
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+  padding: 0;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: row;
+  margin: auto;
+}
+.table__cell {
+  width: 250px;
+  text-align: left;
+  margin-top: 60px;
+  display: flex;
+  flex-wrap: wrap;
+
+  flex-wrap: wrap;
+  padding: 0;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: row;
+
+}
+.table__heading {
+  margin: 0;
+  line-height: 1.15em;
+  font-size: 24px;
+  font-weight: bold;
+
+}
+.table__text {
+  margin-top: 20px;
+  line-height: 1.2em;
+  font-size: 18px;
+  font-weight: normal;
+}
+.table__text-span-accent {
+  margin-top: 20px;
+}
+.section-title {
+  line-height: 69px;
+  font-size: 60px;
+  font-weight: bold;
+}
+.section-subtitle {
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+  margin-top: 20px;
+}
+
+/* конец digits */
+.feynman {
+  height: 890px;
+  background-color: #f2f2f2;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+
+}
+.feynman__title {
+  width: 648px;
+  line-height: 1.15;
+  font-size: 120px;
+  font-weight: bold;
+  z-index: 1;
+  text-align: center;
+  margin-top: 100px;
+}
+.feynman__subtitle {
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: normal;
+  z-index: 1;
+  margin-top: 70px;
+}
+.subtitle-top-space {
+  margin-top: 20px;
+}
+.feynman__link {
+  position: absolute;
+  top: 50%;
+  right: 48px;
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: normal;
+  text-decoration: none;
+  color: #000;
+}
+
+.feynman__image {
+  width: 867px;
+  height: 637px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+/* конец feynman */
+.kaufman__triangle {
+  background-image: url(../images/kaufman-triangle.svg);
+  width: 877px;
+  height: 877px;
+  position: absolute;
+  top: 0;
+  right: -210px;
+  z-index: 0;
+}
+.kaufman {
+  overflow: hidden;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-color: #000;
+  position: relative;
+}
 .table__cell_theme_dark {
   width: 200px;
-  color: white;
+  color: #f2f2f2;
   margin-right: 0;
   margin-top: 80px;
+  z-index: 1;
+}
+.section-title_theme_dark {
+  color: #f2f2f2;
+}
+.section-subtitle_theme_dark {
+  color: #f2f2f2;
+}
+/* закончился kaufman */
+.footer {
+  min-height: 350px;
+  background-color: #000;
+  display: flex;
+  margin: auto;
+}
+.footer__column_copyright {
+  flex-basis: 711px;
+  list-style: none;
+  padding: 0;
+}
+.logo__place_footer {
+  background-image: url(../images/logo_place_footer.svg);
+  height: 35px;
+  top: 0;
+  left: 0;
+  padding: 0;
+}
+.columns_space-top-bottom {
+ margin: 60px auto 40px;
+}
+.columns {
+  width: 90%;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  text-align: start;
+}
+.footer__column_info {
+  list-style: none;
+}
+.footer__author {
+  padding: 18px 0;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  line-height: 25px;
+  font-size: 18px;
+  color: #f2f2f2;
+}
+.footer__column_social {
+  list-style: none;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
+  color: #f2f2f2;
+}
+.footer__social-icon {
+  display: flex;
+}
+.footer__column-links {
+  text-decoration: none;
+}
+.footer__column-links {
+  line-height: 30px;
+  font-size: 18px;
+  color: #f2f2f2;
+}
+.column-heading {
+  list-style: none;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
+  color: #f2f2f2;
+}
+.footer__icon-image {
+  margin-left: 10px;
 }
