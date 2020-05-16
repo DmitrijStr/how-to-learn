@@ -158,7 +158,7 @@
 /* конец digits */
 .feynman {
   margin: 100px auto 0;
-  height: 890px;
+  height: 790px;
   background-color: #f2f2f2;
   display: flex;
   position: relative;
@@ -236,7 +236,6 @@
   min-height: 350px;
   background-color: #1f1f1f;
   display: flex;
-  margin: auto;
 }
 .footer__column_content_copyright {
   flex-basis: 711px;
@@ -247,7 +246,7 @@
   justify-content: space-between;
 
 }
-.logo__place_footer {
+.logo_place_footer {
   background-image: url(../images/logo_place_footer.svg);
   height: 35px;
   top: 0;
